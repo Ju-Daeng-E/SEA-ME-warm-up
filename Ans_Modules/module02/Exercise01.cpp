@@ -32,16 +32,33 @@ public:
     }
 
     //----SETTER
-    void setWheelName(string name){
-        wName = name;
+    void setWheelName(int no){
+        wNo = no;
     }
 
     //----GETTER
     void getWheelName(){
-        cout << "Wheel name : " << wName << endl;
+        switch (wNo)
+        {
+        case 1:
+            cout << "Wheel Name : FL" << endl;
+            break;
+        case 2:
+            cout << "Wheel Name : FR" << endl;
+            break;
+        case 3:
+            cout << "Wheel Name : RL" << endl;
+            break;
+        case 4:
+            cout << "Wheel Name : RR" << endl;
+            break;
+        default:
+            break;
+        }
+        
     }
 private:
-    string wName;
+    int wNo;
 };
 
 class Brake : public Part {
@@ -50,11 +67,30 @@ public:
         cout << "Brake part\n";
     }
 
+    //----SETTER
+    void setBrakeNumber(int no){
+        Brake_num = no;
+    }
     //----GETTER
     void getBrakeTemp(){
-        cout << "Brake Disk Temperature : " << Normal_diskTemp << endl;
+        switch(Brake_num){
+            case 0:
+                cout << "Brake Disk Temperature FL : " << Normal_diskTemp << endl;
+                break;
+            case 1:
+                cout << "Brake Disk Temperature FR : " << Normal_diskTemp << endl;
+                break;
+            case 2:
+                cout << "Brake Disk Temperature RL : " << Normal_diskTemp << endl;
+                break;
+            case 3:
+                cout << "Brake Disk Temperature RR : " << Normal_diskTemp << endl;
+                break;
+        }
+        
     }
 private:
+    int Brake_num;
     int Normal_diskTemp = 50;
 };
 
@@ -75,7 +111,11 @@ public:
     }
 
     void printGear(){
+        if(current_Gear == 0){
+            cout << "GEAR : N" << endl;
+        }else{
         cout << "GEAR : " << current_Gear << endl;
+        }
     }
 };
 
@@ -113,10 +153,52 @@ public:
 
 int main() {
     Car myCar;
-    myCar.printParts();
+    //myCar.printParts();
     
     //-----ENGINE PART
-    myCar.engine_->setEngineName("HONDA");
+    myCar.engine_->print();
+    myCar.engine_->setEngineName("HONDA Engine");
     myCar.engine_->getEngineName();
+
+    //-----Wheel PART
+    for(int i = 1 ; i < 5 ; i++){
+        myCar.wheels_[i].setWheelName(i);
+    }
+    for(int i = 1 ; i < 5 ; i++){
+        myCar.wheels_[i].getWheelName();
+    }
+
+    //-----Brake PART
+    myCar.brakes_->print();
+
+    for(int i = 0 ; i < 4 ; i++){
+        myCar.brakes_[i].setBrakeNumber(i);
+    }
+
+    for(int i = 0 ; i < 4 ; i++){
+        myCar.brakes_[i].getBrakeTemp();
+    }
+
+    //-----Transmission
+    myCar.transmission_->print();
+    myCar.transmission_->printGear();  //Gear N
+    myCar.transmission_->GearUP();
+
+    myCar.transmission_->printGear(); //Gear 1
+    myCar.transmission_->GearUP();
+    
+    myCar.transmission_->printGear(); //Gear 2
+    myCar.transmission_->GearUP();
+
+    myCar.transmission_->printGear(); //Gear 3
+    myCar.transmission_->GearDown();
+
+    myCar.transmission_->printGear(); //Gear 2
+    myCar.transmission_->GearDown();
+
+    myCar.transmission_->printGear(); //Gear 1
+    myCar.transmission_->GearDown();
+
+    myCar.transmission_->printGear(); //Gear N
     return 0;
 }

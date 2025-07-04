@@ -11,6 +11,7 @@ struct Personal{
 };
 
 vector<Personal> PB;
+
 bool isUnique(string num){
     for(int i = 0 ; i < PB.size() ; i++){
         if(PB[i].number == num) return false;

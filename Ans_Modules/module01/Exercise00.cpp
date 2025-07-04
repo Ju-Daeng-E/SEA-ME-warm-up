@@ -21,7 +21,8 @@ class Car{
         Car(int speed){   //위임 생성자 delegating constructor
             Car("None", speed);
         }
-
+            
+        //---- SETTER
         void setName(string name){
             this->name = name;
         }   
@@ -39,6 +40,7 @@ class Car{
             this->name = original.name;
             this->speed = original.speed;
         }
+
         Car& operator=(const Car &c){   //복사 대입 연산자 Copy assignment operator override
             this->name = c.name;
             this->speed = c.speed;
@@ -46,7 +48,6 @@ class Car{
             cout << "Copy assignment operator\n";
             return *this;
         }
-
 
         //----------------------------------------------------------------------------------
         ~Car(){
@@ -60,8 +61,8 @@ int main(){
     car.setSpeed(200);
     car.print();
 
-
     Car copy(car);
+    
     Car cp = car;
     cp.print();
     car = cp;
