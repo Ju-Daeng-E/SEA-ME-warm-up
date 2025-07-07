@@ -1,0 +1,20 @@
+# ninja log v6
+913	4279	7735907125409236	CMakeFiles/RacingGamev2.dir/RacingGamev2_autogen/mocs_compilation.cpp.obj	c33fbff81f27243a
+20	1034	7735890135836389	build.ninja	8188f652ab7558ba
+39	911	7735907124442191	C:/Users/kjuhu/Desktop/SEAME/RacingGamev2/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/RacingGamev2_autogen/timestamp	6bb0a420798f80b2
+31	87	7735892571577851	CMakeFiles/clean.additional	baedbe210acaa455
+87	98	7735892572136780	clean	577b940aee94fbd7
+919	3879	7735907125483142	CMakeFiles/RacingGamev2.dir/main.cpp.obj	3a1c2db5267e536e
+39	911	7735907124442191	RacingGamev2_autogen/timestamp	6bb0a420798f80b2
+39	911	7735907124442191	C:/Users/kjuhu/Desktop/SEAME/RacingGamev2/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/RacingGamev2_autogen/mocs_compilation.cpp	6bb0a420798f80b2
+39	911	7735907124442191	RacingGamev2_autogen/mocs_compilation.cpp	6bb0a420798f80b2
+925	4082	7735907125543189	CMakeFiles/RacingGamev2.dir/mainwindow.cpp.obj	75141d45ab84c962
+4280	4578	7735907159086351	RacingGamev2.exe	d3bf73ab92dfab55
+984	3156	7735892605710512	CMakeFiles/RacingGamev2.dir/carthread.cpp.obj	e787cac041a6e3ff
+932	3836	7735907125606742	CMakeFiles/RacingGamev2.dir/modeselectdialog.cpp.obj	bcda2388369740de
+45	287	7735908532447629	RacingGamev2_autogen/timestamp	6bb0a420798f80b2
+45	287	7735908532447629	RacingGamev2_autogen/mocs_compilation.cpp	6bb0a420798f80b2
+45	287	7735908532447629	C:/Users/kjuhu/Desktop/SEAME/RacingGamev2/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/RacingGamev2_autogen/timestamp	6bb0a420798f80b2
+45	287	7735908532447629	C:/Users/kjuhu/Desktop/SEAME/RacingGamev2/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/RacingGamev2_autogen/mocs_compilation.cpp	6bb0a420798f80b2
+288	2888	7735908534875523	CMakeFiles/RacingGamev2.dir/mainwindow.cpp.obj	75141d45ab84c962
+2888	3166	7735908560876184	RacingGamev2.exe	d3bf73ab92dfab55

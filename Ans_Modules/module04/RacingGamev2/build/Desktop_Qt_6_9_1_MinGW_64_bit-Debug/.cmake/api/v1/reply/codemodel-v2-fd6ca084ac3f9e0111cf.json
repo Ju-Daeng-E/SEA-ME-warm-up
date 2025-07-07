@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-da9b5cf40911771be98f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RacingGamev2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RacingGamev2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RacingGamev2-Debug-7f4293164278a849cb16.json",
+					"name" : "RacingGamev2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RacingGamev2_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RacingGamev2_autogen-Debug-a835faf0bb58c1d85af9.json",
+					"name" : "RacingGamev2_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RacingGamev2_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RacingGamev2_autogen_timestamp_deps-Debug-88e6234a425c6ab4b538.json",
+					"name" : "RacingGamev2_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kjuhu/Desktop/SEAME/RacingGamev2/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/kjuhu/Desktop/SEAME/RacingGamev2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
